@@ -21,7 +21,7 @@ browsers.map(function(browserStr) {
 }).forEach(function(br) {
   var browser = br[0]
   var version = br[1]
-  var usage   = '(' + agents[browser].usage_global[version].toFixed(2) + ' global usage)'
+  var usage   = '(' + agents[browser].usage_global[version].toFixed(2) + '% global usage)'
 
   console.log('%s %s %s',
     agents[browser].browser,
