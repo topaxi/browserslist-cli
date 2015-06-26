@@ -1,12 +1,12 @@
 browserslist-cli
 ================
 
-Command line interface for [browserlist](https://github.com/ai/browserslist).
+Command line interface for [browserslist](https://github.com/ai/browserslist).
 
 Install:
 
 ```sh
-$ npm install -g browserlist-cli
+$ npm install -g browserslist-cli
 ```
 
 Run:
@@ -18,12 +18,12 @@ $ browserslist
 Run with arguments:
 
 ```sh
-$ browserlist last 2 version
-$ browserlist '> 5%, last 2 version'
+$ browserslist last 2 version
+$ browserslist '> 5%, last 2 version'
 ```
 
-Run with browserlist config file:
+Run with browserslist config file:
 
 ```sh
-$ browserlist -p /home/topaxi/project/browserlist
+$ browserslist -p /home/topaxi/project/browserslist
 ```
