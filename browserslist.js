@@ -7,7 +7,7 @@ var chalk        = require('chalk')
 var query
 
 cmd.version(require('./package.json').version)
-   .option('-p, --path', 'Path to browserlist file [browserlist]', 'browserlist')
+   .option('-p, --path', 'Path to browserslist file [browserslist]', 'browserslist')
    .arguments('<browserslist...>')
    .action(function(queryValue) {
      query = queryValue.join(' ')
