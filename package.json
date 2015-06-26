@@ -1,7 +1,7 @@
 {
   "name": "browserslist-cli",
   "description": "Outputs the browsers from browerslist",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "author": "Damian Senn <damian.senn@gmail.com>",
   "repository": {
     "type": "git",
