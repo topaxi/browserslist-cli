@@ -21,11 +21,28 @@ browsers.map(function(browserStr) {
 }).forEach(function(br) {
   var browser = br[0]
   var version = br[1]
-  var usage   = '(' + agents[browser].usage_global[version].toFixed(2) + '% global usage)'
 
-  console.log('%s %s %s',
+  var usage = '(' + getGlobalUsage(browser, version).toFixed(2) + '% global usage)'
+
+  console.log('%s%s %s',
     agents[browser].browser,
-    version,
+    // Chrome/Firefox/UC Browser don't have versions
+    version === '0' ? '' : ' ' + version,
     chalk.dim(usage)
   )
 })
+
+function getGlobalUsage(browser, version) {
+  if (version in agents[browser].usage_global) {
+    return agents[browser].usage_global[version]
+  }
+  else { // No version match found, get latest version
+    var keys = Object.keys(agents[browser].usage_global)
+
+    if (keys.length) {
+      return agents[browser].usage_global[keys.pop()]
+    }
+  }
+
+  return 0
+}
