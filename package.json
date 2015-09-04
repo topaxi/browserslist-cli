@@ -21,8 +21,8 @@
     "cli"
   ],
   "dependencies": {
-    "browserslist": "^0.5.0",
-    "caniuse-db": "^1.0.30000216",
+    "browserslist": "^1.0.0",
+    "caniuse-db": "^1.0.30000219",
     "chalk": "^1.0.0",
     "commander": "^2.8.1"
   }
