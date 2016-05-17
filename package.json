@@ -9,7 +9,8 @@
   },
   "license": "MIT",
   "bin": {
-    "browserslist": "bin/browserslist.js"
+    "browserslist": "bin/browserslist.js",
+    "browserslist-cli": "bin/browserslist.js"
   },
   "engines": {
     "node": ">= 0.10.0",
