@@ -1,5 +1,4 @@
-browserslist-cli
-================
+# DEPREACTED: Use Browserslist built-in CLI instead
 
 Command line interface for [browserslist](https://github.com/ai/browserslist).
 
